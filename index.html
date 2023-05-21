@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="tela">
+                <div class="containerTela">
+
+                    <img
+                        src="">
+                    <p id="nameSongs">A-train</p>
+                    <div class="containerRange">
+                        <input type="range" value="0" max="1" id="range"></input>
+                    </div>
+                    <div class="containerTime">
+                        <span id="currentTimer">0:00</span>
+                    </div>
+                    <span id="timeSong">00:00</span>
+                </div>
+
+            </div>
+            <audio id="soundMp3" ></audio>
+            <div class="containerBt">
+                <button class="previousBt" onclick="mp3.previus()"></button>
+                <button class="playBt" onclick="mp3.play()"></button>
+                <button class="nextBt" onclick="mp3.next()"></button>
+            </div>
+        </main>
+        <div class="containerFilesMusic">
+            <input type="file" name="file" id="filesSongs" onchange="mp3.addSongs()">
+            <div class="containerListSongs">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
