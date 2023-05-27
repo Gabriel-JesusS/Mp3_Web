@@ -52,17 +52,18 @@ class Mp3 {
     }
     renderLIstSongs() {
         for (let i = 0; i < this.arraySounds.length; i++) {
+            const container = document.querySelector('.containerListSongs');
             const img = document.createElement('img');
-            img.classList.add('cardImg')
             const card = document.createElement('div');
-            const text = document.createElement('p')
-            const container = document.querySelector('.containerListSongs')
-            img.src = this.arraySounds[i].img
-            text.innerHTML = this.arraySounds[i].nameSong
+            const text = document.createElement('p');
+            img.classList.add('cardImg');
+            img.src = this.arraySounds[i].img;
+            text.innerHTML = this.arraySounds[i].nameSong;
             card.classList.add('card');
-            card.appendChild(img)
-            card.appendChild(text)
-            container.appendChild(card)
+
+            card.appendChild(img);
+            card.appendChild(text);
+            container.appendChild(card);
         }
     }
 
@@ -136,8 +137,6 @@ class Mp3 {
 
 
     }
-
-
 
     // a vança para proxima musica
     next() {
