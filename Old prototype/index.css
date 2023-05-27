@@ -1,0 +1,385 @@
+
+
+body {
+    background: linear-gradient(10deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+
+    padding-top: 2rem;
+    border: 3px solid indigo;
+    height: 500px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 10px -1px 0px #051113;
+    background-size: 400% 400%;
+    background: linear-gradient(45deg, #051113, rgb(59, 3, 82), #082227);
+    filter: drop-shadow(3px -1px 0px indigo);
+    animation: gradient-bg 5s ease infinite;
+
+
+}
+
+.containerList{
+    display: flex;
+    justify-content: center;
+}
+.listSongsSummary {
+  
+    position: fixed;
+    margin-top: -15px;
+
+    background: linear-gradient(45deg, #051113, rgb(59, 3, 82), #082227);  
+}
+
+.listSongsSummary summary {
+color: #fff;
+    width: 230px;
+    background-color: indigo;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: margin 250ms ease-out;
+
+}
+
+details summary{
+    transition: margin 250ms ease-out;
+  
+}
+details[open] summary {
+    margin-bottom: 10px;
+
+}
+
+.tela {
+  
+    border: 5px solid indigo;
+    height: 210px;
+    margin-top: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #051113;
+    align-items: center;
+    display: flexbox;
+
+}
+
+.containerTela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.containerTime {
+    display: flexbox;
+    position: relative;
+    top: -30px;
+    margin-right: 180px;
+
+}
+
+.tela img {
+    background-size: cover;
+    background-position: 50rem;
+    height: 160px;
+    width: 220px;
+}
+
+.tela p {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 10pt;
+    background-color: indigo;
+
+    width: 219px;
+
+
+}
+
+.containerDragonImg {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.dragon {
+
+    height: 250px;
+    filter: drop-shadow(2px -2px 0px indigo);
+    position: relative;
+
+
+
+}
+
+span {
+    color: #fff;
+    position: relative;
+
+}
+
+#timeSong {
+    position: relative;
+    top: -49px;
+    margin-left: 180px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.containerRange {
+    position: relative;
+    top: -44px;
+    border-radius: 5px;
+    align-items: center;
+
+
+
+}
+
+#range {
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+[type='range'] {
+
+    height: 10px;
+    width: 216px;
+    border: 2px solid #051113;
+    border-radius: 2px;
+    transition: opacity 0.2ms;
+    appearance: none;
+    background-color: #252525;
+
+
+
+}
+
+#range::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+
+    box-shadow: -407px 0 0 400px indigo;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+
+
+.containerBt {
+    border: 5px solid indigo;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    height: 190px;
+    border-radius: 300px;
+    background-image: url('src/imgs/dragon\ icon.png');
+    background-size: 15.1rem;
+    background-position-x: center;
+    filter: drop-shadow(0px 0px 2px rgb(117, 5, 178));
+
+
+}
+
+.containerBt button {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 70px;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    transition: color 250ms ease-in-out;
+    filter: drop-shadow(4px 2px 0px rgb(159, 58, 232));
+}
+
+.containerBt button:hover {
+    filter: drop-shadow(2px 0px 0px rgb(159, 58, 232));
+}
+
+.playBt {
+    background-image: url('src/imgs/icons8-play-50.png');
+    background-size: cover;
+    margin: 20px;
+}
+
+.pauseBt {
+    background-image: url('src/imgs/icons8-pause-30.png');
+    background-size: cover;
+    margin: 20px;
+}
+
+.nextBt {
+    background-image: url('src/imgs/icons8-next-48.png');
+    background-size: cover;
+}
+
+.previousBt {
+    background-image: url('src/imgs/icons8-prev-48.png');
+    background-size: cover;
+}
+
+.imgLoad {
+    display: block;
+    background-image: url('src/imgs/loadPng.png');
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+
+    top: -50px;
+    position: relative;
+    animation: rotate 250ms ease-in infinite;
+}
+
+@keyframes rotate {
+    25% {
+        rotate: 150deg;
+    }
+}
+
+/* .containerFilesMusic {
+
+    margin-top: 32px;
+    background-color: rgb(94, 32, 139);
+    display: flexbox;
+    max-width: 210px;
+    height: 5rem;
+    margin-left: 15px;
+    overflow: hidden;
+
+} */
+.containerSongs{
+
+    background-color: rgb(94, 32, 139);
+    display: flexbox;
+
+
+ height: 9.5rem ;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.containerFilesMusic input {}
+
+.containerSongs::-webkit-scrollbar {
+    background-color: rgb(59, 3, 82);
+    width: 0.5rem;
+}
+
+.containerSongs::-webkit-scrollbar-button {
+    background-color: #4e0e8a;
+}
+
+.containerSongs::-webkit-scrollbar-track {
+    background-color: rgb(74, 67, 67);
+}
+
+.containerSongs::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 17, 17);
+    height: 50px;
+    transition: all 1s ease-in-out;
+}
+
+input[type="file"] {
+    position: relative;
+    top: 2px;
+    left: 270px;
+    margin-left: -270px;
+
+    height: 20px;
+    width: 110px;
+
+
+}
+
+#filesSongs::-webkit-file-upload-button {
+    cursor: pointer;
+    background-color: indigo;
+    border: 1px solid #252525;
+    color: #fff;
+    transition: background 250ms linear;
+}
+
+#filesSongs::-webkit-file-upload-button:hover {
+    background-color: #a81fc0;
+    color: #dbd6d6;
+}
+
+label {
+    padding: 20px 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    text-indent: 5px;
+    margin-top: 5px;
+    width: 220px;
+    
+    color: #fff;
+    height: 50px;
+    background-color: #252525;
+    transition: margin 250ms ease-out;
+    box-shadow: -5px 2px 5px #171717;
+}
+
+.card p {
+    overflow: hidden;
+    font-size: 6.2pt;
+
+
+}
+
+.cardImg {
+
+    width: 70px;
+    height: 50px;
+
+}
