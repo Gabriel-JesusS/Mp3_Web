@@ -43,7 +43,7 @@ button {
     cursor: pointer;
 }
 
-.musicSpeed{
+.musicSpeed {
     text-indent: 22rem;
     color: #fff;
     cursor: pointer;
@@ -98,7 +98,7 @@ input[type="range"]::-webkit-slider-runnable-track {}
     transition: all 250ms ease-out;
     height: 4rem;
     width: 4rem;
-  
+
     background-color: transparent;
     background-color: transparent;
 }
@@ -135,7 +135,7 @@ input[type="range"]::-webkit-slider-runnable-track {}
     height: 20px;
     width: 20px;
     background-size: cover;
-    right: -15rem;
+    right: -20rem;
     position: relative;
     animation: rotate 250ms ease-in infinite;
 }
@@ -198,16 +198,13 @@ details[open] summary {
 
 input[type="file"] {
     width: 7rem;
-    content: counter("dsad");
 }
 
 #filesSongs::-webkit-file-upload-button {
     cursor: pointer;
-
     background-color: indigo;
     border: none;
     color: #fff;
-
     transition: background 250ms linear;
 }
 
@@ -219,12 +216,9 @@ input[type="file"] {
 
 @media screen and (max-width: 750px) {
 
-
     .card p {
         font-size: 10pt;
     }
-
-    .card {}
 
     .cardImg {
         height: 5rem;
@@ -236,7 +230,7 @@ input[type="file"] {
 
     }
 
-    .musicSpeed{
+    .musicSpeed {
         text-indent: 17rem;
     }
 
