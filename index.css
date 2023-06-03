@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&display=swap');
+
 body {
-    background: #301A53;
+
+    background: linear-gradient(0deg, rgba(45, 37, 90, 0.2), rgba(45, 37, 90, 0.2)), #252525;
 }
 
 .container {
@@ -8,34 +11,36 @@ body {
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    transition: margin 550ms ease-in-out;
 }
 
 .screen {
-
-    width: 22rem;
+    display: flexbox;
+    border: 7px solid #4B0082;
+    width: 20rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
     height: 15rem;
-    box-shadow: 0px 2px 7px #2f0965;
     margin-top: 2rem;
 }
 
 .screen img {
-    width: 22rem;
-    height: 13.7rem;
+    width: 20rem;
+    height: 13.5rem;
 }
 
 .screen p {
-
+    font-family: 'Lalezar', cursive;
     padding-bottom: 0.4rem;
     text-align: center;
     color: #fff;
     max-height: 1.5rem;
     margin-top: -0.4rem;
     font-size: 15pt;
-
     overflow: hidden;
-    height: 1.5rem;
-    width: 22rem;
-    background: #6c33c9;
+    height: 1.3rem;
+    width: 20rem;
+    background: #4B0082;
 }
 
 
@@ -53,31 +58,26 @@ input[type="range"] {
     display: block;
     outline: none;
     appearance: none;
-    background-color: #252525;
-    border: 2px solid #6c33c9;
+    background-color: #1E1E1E;
     width: 25rem;
-    height: 1rem;
-    border-radius: 5rem;
+    height: 1.1rem;
+    border-radius: 1rem;
 
     overflow: hidden;
 }
 
 input[type="range"]::-webkit-slider-thumb {
     appearance: none;
-
     background-color: #fff;
     border-radius: 5rem;
-    height: 1rem;
-    width: 1rem;
-
-    box-shadow: -407px 0 0 400px indigo;
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-left: 0.2rem;
+    box-shadow: -410px 0 0 400px #4B0082;
     cursor: pointer;
     transition: all 3s ease-in-out;
 
 }
-
-input[type="range"]::-webkit-slider-runnable-track {}
-
 
 .containerTime {
     display: flex;
@@ -88,7 +88,7 @@ input[type="range"]::-webkit-slider-runnable-track {}
 }
 
 .containerTime span:nth-child(even) {
-    text-indent: 19.5rem;
+    text-indent: 19rem;
 
 }
 
@@ -96,24 +96,20 @@ input[type="range"]::-webkit-slider-runnable-track {}
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     transition: all 250ms ease-out;
-    height: 4rem;
-    width: 4rem;
-
+    height: 6rem;
+    width: 6rem;
     background-color: transparent;
     background-color: transparent;
 }
 
-
 .previus {
-    filter: drop-shadow(0px 0px 1px #863ff8);
     border: none;
     background-image: url('src/imgs/previus.png');
     background-size: cover;
 }
 
 .play {
-    border: 5px double #6c33c9;
-
+    border: 5px solid #6c33c9;
     border-radius: 100%;
     background-image: url('src/imgs/play0.png');
     background-size: cover;
@@ -147,7 +143,7 @@ input[type="range"]::-webkit-slider-runnable-track {}
 }
 
 .next {
-    filter: drop-shadow(0px 0px 1px #863ff8);
+
     border: none;
     background-image: url('src/imgs/next.png');
     background-size: cover;
@@ -155,38 +151,72 @@ input[type="range"]::-webkit-slider-runnable-track {}
 
 .containerListSongs {
     overflow: hidden;
-    background-color: #6c33c9;
+    display: block;
 
 }
 
 .card {
+
+    cursor: pointer;
     display: flex;
-    text-indent: 22px;
     margin-top: 0.1rem;
     margin-bottom: 0.4rem;
     width: 25.5rem;
     color: #fff;
-    height: 5rem;
-    background-color: #252525;
-    box-shadow: 0px 2px 4px #af15fd;
+    height: 4rem;
+    background-color: #1E1E1E;
+    /* box-shadow: 0px 2px 4px #af15fd; */
 
 }
 
+.delete {
+margin-top: 1rem;
+    height: 2.2rem;
+    background-color: #4B0082;
+    border: NONE;
+    color: #fff;
+
+}
+
+
+.card p {
+text-indent: 5pt;
+text-align: left;
+    margin-bottom: 1.5rem;
+    background-color: #863FF8;
+    width: 19rem;
+    margin-left: 0.5rem;
+height: 2.2rem;
+   
+
+
+
+}
+
+
+
 .cardImg {
 
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 
 }
 
 nav {
-    text-align: center;
+    font-family: 'Lalezar', cursive;
+    text-align: left;
+    padding: 2rem;
+    font-size: 12pt;
 }
 
 details summary {
+    text-indent: 1rem;
+    font-size: 18pt;
     color: #fff;
-    background-color: #6c33c9;
+    border-radius: 0.2rem;
+    background-color: #4B0082;
     width: 25.5rem;
+    height: 2.5rem;
     transition: margin 250ms ease-in-out;
 
 }
@@ -196,14 +226,25 @@ details[open] summary {
     margin-bottom: 10px;
 }
 
+details[close] summary {
+    transition: all 550ms ease-out;
+    margin-bottom: 10px;
+}
+
 input[type="file"] {
-    width: 7rem;
+    border-radius: 0.2rem;
+    width: 9.5rem;
+    margin-left: 6.5rem;
+    margin-top: 0.2rem;
+
 }
 
 #filesSongs::-webkit-file-upload-button {
+    font-family: 'Lalezar', cursive;
     cursor: pointer;
-    background-color: indigo;
+    background-color: #863ff8;
     border: none;
+    font-size: 15pt;
     color: #fff;
     transition: background 250ms linear;
 }
@@ -214,19 +255,24 @@ input[type="file"] {
 
 }
 
-@media screen and (max-width: 750px) {
+/* RESPONSIVIDADE PARA DISPOSITIVOS MOVEIS */
+@media screen and (max-width: 650px) {
 
     .card p {
-        font-size: 10pt;
+  
+        font-size: 9.5pt;
+        width: 12rem;
+        height: 2.1rem;
     }
 
     .cardImg {
-        height: 5rem;
-        width: 5rem;
+        height: 4rem;
+        width: 4rem;
     }
 
     details summary {
         width: 20rem;
+        font-size: 15pt;
 
     }
 
@@ -236,8 +282,14 @@ input[type="file"] {
 
     .screen {
         width: 19rem;
+        border: 5px solid #4B0082;
 
+    }
 
+    .delete {
+        height: 2.1rem;
+ 
+margin-top: 0.8rem;
     }
 
     .containerListSongs {
@@ -249,6 +301,8 @@ input[type="file"] {
     }
 
     .screen p {
+        padding-top: 0.2rem;
+        letter-spacing: 0.1rem;
         width: 19rem;
         text-align: center;
         font-size: 10pt;
@@ -256,6 +310,7 @@ input[type="file"] {
 
     input[type="range"] {
         width: 20rem;
+
     }
 
     .containerTime {
@@ -263,9 +318,23 @@ input[type="file"] {
     }
 
     .containerTime span:nth-child(even) {
-        text-indent: 14.2rem;
+        text-indent: 13.5rem;
 
     }
 
+    .imgLoad {
+        right: -15rem;
+    }
 
+    input[type="file"] {
+        border-radius: 0.2rem;
+        margin-top: 0.4rem;
+        margin-left: 2rem;
+    }
+
+    #filesSongs::-webkit-file-upload-button {
+        font-size: 12pt;
+        width: 10rem;
+
+    }
 }
