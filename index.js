@@ -71,7 +71,7 @@ class Mp3 {
 
 
             deleteSong.addEventListener('click', () => {
-                this.totalSongs(Mp3.cont - 1)
+                this.totalSongs(Mp3.cont -= 1)
                 document.querySelector('.play').classList.remove('pause');
                 this.arraySounds.splice(i, 1);
                 card.remove();
