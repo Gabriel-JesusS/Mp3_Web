@@ -7,21 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mp3 Web</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="src/imgs/iconMW(no background).png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <div class="screen">
-            <img class="telaImg" src="">
+            <img class="telaImg" src="src/imgs/iconMW (3).png">
             <p id="nameSongs">nehuma musica foi adicionada</p>
         </div>
-        <div class="containerButtons"> <button class="previus" onclick="mp3.previus()"></button> <button class="play"
-                onclick="mp3.play()"></button> <button class="next" onclick="mp3.next()"> </button></div><span class="musicSpeed" onclick="mp3.music_speed()">x1.5</span>
+        <div class="containerButtons"> <button class="previus" onclick="mp3.previus()"></button>
+            <button class="play" onclick="mp3.play()"></button> <button class="next" onclick="mp3.next()"> </button>
+        </div>
+        <div class="musicSpeed">
+            <!-- <button>-</button><span>x0</span> <button>+</button> -->
+        </div>
         <input id="range" type="range" value="0">
         <div class="containerTime"><span id="currentTime">00:00</span><span id="timeSong">00:00</span></div>
         <nav class="navListSongs">
+            <p id="mySongs">0</p>
             <details>
-                <summary>My Songs <input type="file" name="file" id="filesSongs" placeholder="dsadsa" onchange="mp3.addSongs()"></summary>
+                <summary>My Songs<input type="file" name="file" id="filesSongs" placeholder="dsadsa"
+                        onchange="mp3.addSongs()"></summary>
                 <div class="containerListSongs"></div>
             </details>
         </nav>
