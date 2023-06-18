@@ -1,6 +1,7 @@
 <h1>Bem vindo ao:</h1>
 <img src="https://lh3.googleusercontent.com/GjlaQEJHKQIPmEx0n0HsSXP-F4gHJBqWJGXosR4NiYqxOu9mWZF1hlEUUfEbVu7lzVc0demzzavyTFofRb71292R35u9CY2n8uFhiZsD" width="800" />
-<h3>"O que é o Mp3Web?" Mp3Web e um reprodutor de músicas, onde você pode adicionar suas canções favoritas e as ouvi-las.</h3>
+<h3>"O que é o Mp3Web?" <br>
+  Mp3Web e um reprodutor de músicas, onde você pode adicionar suas canções favoritas e as ouvi-las.</h3>
 <h2>Descrição do Projeto:</h2>
 <p>Esse projeto foi criado com o intuito de desenvolver aplicações usando OOP-(Object-Oriented Programming) do JavaScript, Além disso também foi usado as APIS nativas do JS como: File onde provê informações sobre arquivos e permite ao JavaScript a acessar seu conteúdo e seus metodos,
   API de áudio da Web fornece um sistema poderoso e versátil para controlar o áudio na Web, permitindo que os desenvolvedores escolham fontes de áudio, adicionem efeitos ao áudio,
@@ -12,3 +13,4 @@
   ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![NODEJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+<h2><link>Link da pag: https://gabriel-jesuss.github.io/Mp3_Web/</link></h2>
