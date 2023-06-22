@@ -1,5 +1,5 @@
 <h1>Bem vindo ao:</h1>
-<img src="https://lh3.googleusercontent.com/GjlaQEJHKQIPmEx0n0HsSXP-F4gHJBqWJGXosR4NiYqxOu9mWZF1hlEUUfEbVu7lzVc0demzzavyTFofRb71292R35u9CY2n8uFhiZsD" width="800" />
+<img src="https://gabriel-jesuss.github.io/Mp3_Web/src/imgs/iconMW%20(3).png"800" />
 <h3>"O que é o Mp3Web?"</h3>
  <p>
    
