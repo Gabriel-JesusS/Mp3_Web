@@ -23,7 +23,6 @@ body {
 
 header{
     display: flex;
-    border: 1px solid;
     text-align: end;
     background-color: #4B0082;
 }

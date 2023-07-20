@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 
 })
 
-app.get("/", (req, res) => {
+app.get("/Home", (req, res) => {
     res.sendFile(join(__dirname, "/src/index.html"))
 })
 
