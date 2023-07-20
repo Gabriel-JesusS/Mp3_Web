@@ -1,4 +1,6 @@
 //ass: Mr Sif
+
+
 class Mp3 {
     static cont = 0
     constructor() {
@@ -31,7 +33,6 @@ class Mp3 {
     renderingSongs(index) {
         this.audioMp3.src = this.arraySounds[index].song;
         document.querySelector('#nameSongs').innerHTML = this.arraySounds[index].nameSong;
-        // document.querySelector('.telaImg').src = this.arraySounds[index].img;
         document.querySelector('.play').classList.add('pause');
         this.audioMp3.play();
         this.checkerButtonPlay = 1;
@@ -46,15 +47,13 @@ class Mp3 {
     //METODO PARA CRIAR LISTA DAS MUSICAS ADICIONADAS
     CreateListSongs() {
         const container = document.querySelector('.containerListSongs');
-        const img = document.createElement('img');
         const card = document.createElement('div');
+        const img = document.createElement('img');
         const text = document.createElement('p');
         const deleteSong = document.createElement('button');
-
-
         img.classList.add('cardImg');
         card.classList.add('card');
-        deleteSong.innerHTML = 'Delete';
+        deleteSong.classList.add('containerText');
         deleteSong.classList.add('delete');
 
         this.totalSongs(Mp3.cont += 1)
@@ -86,7 +85,8 @@ class Mp3 {
 
     //FORMATA AS STRINGS PARA MELHOR INTERFACE
     formatStrings(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1, 25).toLowerCase() + "..."
+        return string
+        string.charAt(0).toUpperCase() + string.slice(1, 25).toLowerCase() + "..."
     }
 
     totalSongs(cont) {
@@ -152,7 +152,6 @@ class Mp3 {
 
 
     }
-
     // a vança para proxima musica
     next() {
         document.querySelector('.play').classList.add('pause');
@@ -175,12 +174,23 @@ class Mp3 {
     // music_speed() {
     //     this.audioMp3.playbackRate = 1.5
     // }
+
+    slideNavbarOpen() {
+        const barNavi = document.querySelector(".VerticalNavbar");
+        const body = document.querySelector(".container");
+
+        if (barNavi.clientWidth === 0) {
+            barNavi.style.width = "50%";
+            body.style.filter = "brightness(50%)";
+
+        } else barNavi.style.width = "0%", body.style.filter = "brightness(100%)"
+    }
+
+
 }
 
 
+
 var mp3 = new Mp3();
-
 mp3.renderListSongs()
-
-
 

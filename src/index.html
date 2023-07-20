@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3 Web</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imgs/iconMW(no background).png" type="image/x-icon">
+</head>
+
+<body>
+    <header onclick="mp3.slideNavbarOpen()">
+        <div class="barNavigation">
+            <img src="imgs/iconsMenu.png" height="45" width="45" />
+            <p id="mySongs">0</p>
+        </div>
+        <div class="TitleBar">
+            <h2>Mp3Web</h2>
+        </div>
+    </header>
+    <div class="VerticalNavbar">
+        <h2>Minhas Musicas </h2>
+        <div class="containerListSongs">
+        </div>
+    </div>
+ 
+    <main class="container">
+        <div class="screen">
+            <img class="telaImg" src="imgs/iconMW (3).png">
+            <p id="nameSongs">Nenhuma musica foi adicionada</p>
+        </div>
+        <div class="containerButtons">
+            <button class="previus" onclick="mp3.previus()"></button>
+            <button class="play" onclick="mp3.play()"></button>
+             <button class="next" onclick="mp3.next()"> </button>
+        </div>
+        <div class="containerTime">
+            <span id="currentTime">00:00</span>
+            <div class="timeSong">
+                <span id="timeSong">00:00</span>
+            </div>
+        </div>
+        <input id="range" type="range" value="0">
+        <input type="file" name="file" id="filesSongs" placeholder="dsadsa" onchange="mp3.addSongs()">
+    </main>
+    <audio id="soundMp3"></audio>
+    <script src="index.js"></script>
+</body>
+
+</html>
