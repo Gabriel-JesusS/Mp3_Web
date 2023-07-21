@@ -57,7 +57,6 @@ header{
     overflow: hidden;
     position: fixed;
     width: 0%;
-    border: 1px solid;
     transition: width 250ms ease-in-out;
     background-color: #1E1E1E;
     height: 100%;
@@ -74,7 +73,7 @@ header{
     height: 80%;
     overflow-y: scroll;
     width: 100%;
-    background-color: #863ff8;
+
 }
 
 #mySongs{
@@ -84,8 +83,8 @@ header{
     border-radius: 100%;
 }
 .containerListSongs::-webkit-scrollbar {
-    background-color: #863ff8;
-    width: 1remrem;
+    background-color: #ffffff;
+    width: 1rem;
 }
 
 .containerListSongs::-webkit-scrollbar-thumb {
@@ -188,7 +187,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
     background-size: cover;
-    right: -20rem;
+   
     position: relative;
     animation: rotate 250ms ease-in infinite;
 }
@@ -224,19 +223,21 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 .delete {
-    border-left: 2px solid #863ff8;
-    border: none;
+    border: transparent;
+    border-left: 1px solid #252525;
+
     background-image: url("imgs/deleteIcon.png");
     background-size: 5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     width: 5rem;
-
+transition: filter 200ms linear;
 }
 
 .delete:hover {
-    background-color: red;
+
+    filter: drop-shadow(1px 2px 0px red);
 }
 
 .barNavigation {
@@ -349,9 +350,6 @@ input[type="file"] {
     }
 
 
-    .imgLoad {
-        right: -15rem;
-    }
 
     .containerListSongs::-webkit-scrollbar {
         display: none;
