@@ -160,14 +160,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 .previus {
     border: none;
-    background-image: url('imgs/previus.png');
+    background-image: url('imgslayout/previus.png');
     background-size: cover;
 }
 
 .play {
     border: 5px solid #6c33c9;
     border-radius: 100%;
-    background-image: url('imgs/play0.png');
+    background-image: url('imgslayout/play0.png');
     background-size: cover;
     background-position: 0rem;
 }
@@ -177,13 +177,13 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .pause {
-    background-image: url('imgs/pause.png');
+    background-image: url('imgslayout/pause.png');
     background-size: cover;
 }
 
 .imgLoad {
     display: block;
-    background-image: url('imgs/loadPng.png');
+    background-image: url('imgslayout/loadPng.png');
     height: 20px;
     width: 20px;
     background-size: cover;
@@ -200,7 +200,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .next {
     border: none;
-    background-image: url('imgs/next.png');
+    background-image: url('imgslayout/next.png');
     background-size: cover;
 }
 
@@ -226,7 +226,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: transparent;
     border-left: 1px solid #252525;
 
-    background-image: url("imgs/deleteIcon.png");
+    background-image: url("imgslayout/deleteIcon.png");
     background-size: 5rem;
     background-position: center;
     background-repeat: no-repeat;

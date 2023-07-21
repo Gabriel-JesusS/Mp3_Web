@@ -9,11 +9,10 @@ class Mp3 {
         this.checkerButtonPlay = 0;
         this.indexSong = 0;
         this.checkerFirtsSongAdd = true
-        //evento de escuta no audio para dar uma atualização no tempo da musica  
+
         this.toListen = document.querySelector('audio').addEventListener('timeupdate', this.renderingRage_timeSong)
 
     }
-
     play() {
 
         if (this.audioMp3.readyState >= 4) { // Verifica se o áudio está pronto para ser reproduzido
@@ -32,7 +31,7 @@ class Mp3 {
 
     renderingSongs(index) {
         this.audioMp3.src = this.arraySounds[index].song;
-        document.querySelector('#nameSongs').innerHTML = this.arraySounds[index].nameSong;
+        document.querySelector('#nameSongs').innerHTML = this.formatStrings(this.arraySounds[index].nameSong);
         document.querySelector('.play').classList.add('pause');
         this.audioMp3.play();
         this.checkerButtonPlay = 1;
@@ -85,8 +84,8 @@ class Mp3 {
 
     //FORMATA AS STRINGS PARA MELHOR INTERFACE
     formatStrings(string) {
-        return string
-        string.charAt(0).toUpperCase() + string.slice(1, 25).toLowerCase() + "..."
+     
+      return  string.charAt(0).toUpperCase() + string.slice(1, 25).toLowerCase() + "..."
     }
 
     totalSongs(cont) {
@@ -103,7 +102,7 @@ class Mp3 {
         // CRIA UMA URL DO ARQUIVO RECEBIDO
         const imgUrl = URL.createObjectURL(files);
 
-        this.arraySounds.push({ song: imgUrl, nameSong: this.formatStrings(name), img: "https://dk2dv4ezy246u.cloudfront.net/widgets/sSUHepLQIwU_large.jpg" })
+        this.arraySounds.push({ song: imgUrl, nameSong: name, img: "https://dk2dv4ezy246u.cloudfront.net/widgets/sSUHepLQIwU_large.jpg" })
         this.checkerFirtsSongAdd
         if (this.checkerFirtsSongAdd == true) {
             this.renderingSongs(0);
@@ -189,8 +188,5 @@ class Mp3 {
 
 }
 
-
-
-var mp3 = new Mp3();
-mp3.renderListSongs()
-
+const mp3 = new Mp3();
+mp3.renderListSongs();
