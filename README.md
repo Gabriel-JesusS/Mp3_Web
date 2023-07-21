@@ -1,5 +1,4 @@
-<h1>Bem vindo ao:</h1>
-<img src="https://gabriel-jesuss.github.io/Mp3_Web/src/imgs/iconMW%20(3).png"800" />
+
 <h3>"O que é o Mp3Web?"</h3>
  <p>
    
